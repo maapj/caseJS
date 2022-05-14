@@ -1,0 +1,167 @@
+body {
+    background-color: white;
+    color: coral;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+#img {
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#hack {
+    margin-top: auto;
+    font-size: 100px;
+    position: relative;
+    top: auto;
+}
+
+#score {
+    width: 100px;
+    height: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    position: absolute;
+    color: black;
+}
+
+#gameFrame {
+    background-color: black;
+    height: 550px;
+    width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: bottom;
+    cursor: crosshair;
+    box-shadow: inset 0 200px 200px black;
+
+}
+
+#score {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    height: 50px;
+    width: 1000px;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+    box-shadow: none;
+    font-size: 5em;
+    letter-spacing: -2px;
+    opacity: 0.5;
+}
+
+#healthBar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: coral;
+    transition: width .5s;
+}
+
+.enemy {
+    width: 180px;
+    height: 280px;
+    position: absolute;
+    bottom: -400px;
+    transition: all .5s;
+    border-radius: 100%;
+    background: linear-gradient(#240C2C, black);
+    box-shadow: inset 0 1em 1em coral;
+    overflow: hidden;
+
+
+}
+
+.enemy:before {
+    content: " ^_^ ";
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    font-size: 4em;
+    text-align: center;
+    border-top: 20px double rgba(0, 0, 0, .5);
+}
+
+.enemy:after {
+    content: 'o';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    bottom: 30%;
+    background-color: #222;
+    color: #555;
+    text-align: center;
+    border-radius: 15px;
+    border-bottom: 20px solid #111;
+    border-right: 2px solid brown;
+    transition: all .2s;
+}
+
+.enemy.showing {
+    bottom: 0px;
+}
+
+.enemy.shooting {
+    background: #471515;
+
+}
+
+.enemy.shooting:after {
+    content: '*';
+    left: 20px;
+    color: coral;
+    font-size: 4em;
+    transform: scale(2);
+    box-shadow: 20px -10px 30px black;
+    transition: all .2s;
+}
+
+#enemy1 {
+    left: 5px;
+}
+
+#enemy2 {
+    left: 170px;
+}
+
+#enemy3 {
+    left: 330px;
+}
+
+#enemy4 {
+    left: 490px;
+}
+
+#enemy5 {
+    left: 645px;
+}
+
+
+.enemy.dead {
+    background: #222;
+    transform: rotate(-90deg);
+    bottom: -140px;
+
+}
+
+.enemy.dead:before {
+    content: '*_*';
+    color: #555;
+
+}

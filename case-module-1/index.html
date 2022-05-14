@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domino-Shot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="https://sohanews.sohacdn.com/zoom/700_438/160588918557773824/2021/10/23/photo1634972827529-16349728279271168573711.jpg"
+     id="img" alt="">
+<div id="gameFrame" onclick="myGunSound.play()">
+    <div id="healthBar"></div>
+    <div id="score"></div>
+    <div class="enemy" id="enemy1" onclick="iShoot(this)"></div>
+    <div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+    <div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+    <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+    <div class="enemy" id="enemy5" onclick="iShoot(this)"></div>
+    <button onclick="newGame()">NEW GAME</button>
+    <div id="hack"></div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
