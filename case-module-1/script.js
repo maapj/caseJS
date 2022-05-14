@@ -101,7 +101,7 @@ function randomEnemyAttacks() {
     }, randomDelay)
 }
 
-let healthPoints = 100;
+let healthPoints = 20;
 
 function updateHealthPoints(points) {
 
